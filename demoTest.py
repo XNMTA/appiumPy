@@ -13,7 +13,7 @@ desired_caps['appActivity'] = '.LoginScreen'
 desired_caps['app'] = 'E:/dev/dev-code/learning/appiumPy/apps/RCMobile_7.5.0.1.125_XIA_UP_Automation.apk'
 driver = None
 try:
-    driver = webdriver.Remote('http://localhost:4730/wd/hub', desired_caps)
+    driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
     time.sleep(5)
     # first login
     driver.find_element_by_id('com.ringcentral.android:id/phone').send_keys('18559730001')
